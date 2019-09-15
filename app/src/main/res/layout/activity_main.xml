@@ -4,7 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gameBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gameBoard"
@@ -28,7 +43,7 @@
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:onClick="dropin"
-            android:tag="0"/>
+            android:tag="0" />
 
         <ImageView
             android:id="@+id/tile2"
@@ -37,7 +52,7 @@
             android:layout_margin="10dp"
             android:layout_marginLeft="12dp"
             android:onClick="dropin"
-            android:tag="1"/>
+            android:tag="1" />
 
         <ImageView
             android:id="@+id/tile3"
@@ -45,7 +60,7 @@
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:onClick="dropin"
-            android:tag="2"/>
+            android:tag="2" />
 
         <ImageView
             android:id="@+id/tile4"
@@ -53,7 +68,7 @@
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:onClick="dropin"
-            android:tag="3"/>
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/tile5"
@@ -62,7 +77,7 @@
             android:layout_margin="10dp"
             android:layout_marginLeft="12dp"
             android:onClick="dropin"
-            android:tag="4"/>
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/tile6"
@@ -70,7 +85,7 @@
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:onClick="dropin"
-            android:tag="5"/>
+            android:tag="5" />
 
         <ImageView
             android:id="@+id/tile7"
@@ -79,7 +94,7 @@
             android:layout_margin="10dp"
             android:layout_marginTop="14dp"
             android:onClick="dropin"
-            android:tag="6"/>
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/tile8"
@@ -89,7 +104,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="14dp"
             android:onClick="dropin"
-            android:tag="7"/>
+            android:tag="7" />
 
         <ImageView
             android:id="@+id/tile9"
@@ -98,6 +113,19 @@
             android:layout_margin="10dp"
             android:layout_marginTop="14dp"
             android:onClick="dropin"
-            android:tag="8"/>
+            android:tag="8" />
     </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="resetGame"
+        android:text="Play Again"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameBoard" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
