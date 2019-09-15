@@ -22,5 +22,73 @@
         app:layout_constraintTop_toTopOf="parent"
         app:rowCount="3">
 
+        <ImageView
+            android:id="@+id/tile1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="12dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="12dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:onClick="dropin" />
+
+        <ImageView
+            android:id="@+id/tile9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:onClick="dropin" />
     </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
